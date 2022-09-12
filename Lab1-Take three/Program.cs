@@ -29,16 +29,28 @@ for (int i = 0; i < userInput.Length; i++) //for sparar userInput[i]
 }
 
 string[] userSequence = userInput.Split(others);
+string strings = "";
+
+for (int i = 0; i < userSequence.Length; i++)
+{
+    if (userSequence[0] == userSequence.Max())
+    {
+        Console.WriteLine("hej");
+    }
+}
 
 foreach (var item in userSequence)
 {
     Console.WriteLine(item);
+    strings += item;
 }
 
-if (userSequence[0] == userSequence[])
-{
+Console.WriteLine(strings);
 
-}
+//foreach (var item in strings)
+//{
+//    Console.WriteLine(item);
+//}
 
 //string seqOne = string.Join("", userSequence);
 //Console.WriteLine(seqOne);
